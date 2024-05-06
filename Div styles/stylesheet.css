@@ -1,0 +1,171 @@
+input{
+    display: block;
+    border: slim; 
+    border-width: 0.2px;
+    height: 20px; 
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px; 
+    margin-top: 0px;
+    padding-left: 5px;
+    border: none;
+}
+
+.firstdiv{
+    width: 230px;
+}
+.seconddiv{
+    margin-bottom: 10px;
+}
+
+.firstn{
+    border-width: 0.2px;
+    border-radius: 8px;
+    margin-right: 5px;
+    display: inline;
+    height: 30px;
+    padding-left: 10px;
+    width: 80px;
+}
+.lastn{
+    border-width: 0.2px;
+    border-radius: 8px;
+    margin-right: 5px;
+    display: inline;
+    height: 30px;
+    padding-left: 10px;
+    width: 100px;
+}
+.email{
+    display: block;
+    border-width: 0.2px;
+    border-radius: 8px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    display: inline;
+    height: 30px;
+    padding-left: 10px;
+    width: 205px;
+}
+.sign-up{
+    width: 220px;
+    height: 40px;
+    background-color: rgba(86, 31, 214, 0.849);
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: box-shadow 0.8ms;
+}
+.sign-up:hover{
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.40) ;
+}
+
+.seconddiv{
+    width: 450px; 
+    
+}
+.info{
+    border-radius: 50px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    
+}
+.text{
+    font: Arial;
+    font-size: 30px;
+    margin-bottom: 20px;
+    border: none;
+}
+.Name{
+    display: block;
+    border-radius: 8px;
+    margin-right: 5px;
+    background-color: rgba(161, 153, 153, 0.103);
+    height: 30px;
+    padding-left: 10px;
+    margin-bottom: 9px;
+    width: 205px;
+}
+.Email{
+    display: block;
+    border-width: 0.2px;
+    border-radius: 8px;
+    margin-right: 5px;
+    background-color: rgba(161, 153, 153, 0.116);
+    height: 30px;
+    padding-left: 10px;
+    width: 205px;
+
+    color: red;
+    
+    
+}
+.buttons{
+    margin-top: 20px;
+}
+.now{
+    width: 100px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.938);
+    border: none;
+    border-radius: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: box-shadow 0.8ms;
+    margin-right: 10px;
+}
+.later{
+    border: none; 
+    width: 100px;
+    height: 30px;
+
+}
+
+.third-item{
+    margin-top: 80px;
+}
+.red-square{
+    border: solid; 
+    border-color: red;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.fourth-item{
+    margin-top: 80px;
+    border: solid;
+    border-color: black;
+    border-width: 0.5px;
+    width: 200px;
+    
+}
+.service{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.yesno{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.YouTube{
+    border:solid;
+    border-width: 0.2px;
+    margin-top: 50px;
+    background-color: black;
+}
+.install{
+    color:white;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px ;
+
+}
+.texxt{
+    margin-top: 0px;
+    color: white;
+}
+

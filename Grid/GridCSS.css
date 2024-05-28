@@ -1,0 +1,80 @@
+.starter-div{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    
+}
+
+.first-person{
+    width: 150px;
+    border: solid;
+    border-color:rgba(131, 115, 115, 0.349);
+    border-width: 0.2px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    
+}
+
+.bg-image-div{
+    height: 100px;
+}
+.bg-image{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.info-div{
+    
+}
+
+.name-div{
+    margin-bottom: 0px;
+
+}
+.name{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+.pp-mf-div{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    row-gap: 1px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+.profile-picture{
+    width: 80%;
+    height: 40px;
+    border-radius: 50px;
+}
+.mutual-friends{
+    font-size: 80%;
+}
+
+.button-div{
+    width: 100%;
+    background-color: aqua;
+}
+.button{
+    color: white;
+    height: 30px;
+    width: 100%;
+    background-color: rgba(19, 18, 92, 0.849);
+    border-width: 0.2px;
+    border: none;
+    margin-right: 5px;
+    display: inline;
+    
+    transition: box-shadow 5ms ease; 
+ 
+    
+}
+.button:hover{
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}

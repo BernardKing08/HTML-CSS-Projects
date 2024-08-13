@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+/*
+        const product = {
+            name: 'socks',
+            price: 1050
+        }
+
+        console.log(product);
+        console.log(product.name)
+
+        const product2= {
+            name: 'shirt',
+            rating: {
+                name : 'show-max'
+            },
+
+            //JSON.stringify dosent show functions 
+            fun: function function1(){
+
+            }
+        }
+        console.log(product2.name);
+        console.log(product2['name']);
+        /*console.log(product['delivery-time']);
+        console.log(product2.rating.name);
+
+        var variable = JSON.stringify(product2)
+
+        localStorage.setItem('message',variable);
+        console.log(localStorage.getItem('message')) */
+
+        console.log('hello'.length);
+        console.log('hi'.toUpperCase());
+
+        const obj1 = {
+            message: 'hello', 
+            price: 200
+        }
+
+        const obj2 = obj1;
+
+        console.log(obj1 === obj2); 
+        //const message = obj1.message
+        const {message, price} = obj1;
+        console.log(message)
+        console.log(price)
+    </script>
+</body>
+
+</html>

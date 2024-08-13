@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="playGame('heads')">
+        heads
+    </button>
+    <button onclick="playGame('tails')">
+        tails
+    </button>
+
+    <!--Use the 'console' mode in the internet explorer to view the code-->
+    <script>
+
+        function playGame(guess){
+            if(guess === 'heads'){
+                console.log('You picked heads');
+            }
+            else{
+                console.log('You picked tails');
+            }
+        }
+
+        const product1 = {
+            name: 'basketBall', 
+            price: 2095,
+            deliveryTime: '3 days',
+
+            viewDetails: function(){
+                console.log(product1.name); 
+                console.log(product1.price);
+                console.log(product1.deliveryTime);
+            },
+
+            increasePrice: function(){
+                product1.price += 500;
+                console.log(product1.price);
+            }, 
+
+        }
+
+        const product2 = {
+            name: 'basketBall', 
+            price: 2095,
+            deliveryTime: '3 days',
+
+            viewDetails: function(){
+                console.log(product2.name); 
+                console.log(product2.price);
+                console.log(product2.deliveryTime);
+            },
+
+            increasePrice: function(){
+                product2.price += 500;
+                console.log(product2.price);
+            }, 
+
+        }
+
+
+        function isTheSameProduct(product1, product2){
+            if(product1 === product2)    {
+                console.log('Product1 and product2 are the same');
+            }
+        }
+        
+
+        function comparePrice(product1, product2){
+            if(product1.price < product2.price){
+                console.log(product1);
+            }
+            else{
+                console.log(product2);
+            }
+        }
+
+
+        product1.viewDetails();
+        product1.increasePrice();
+
+        comparePrice(product1, product2);
+        isTheSameProduct(product1, product2);
+
+        let str = 'A STRING IN BLOCK LETTERS'; 
+        let strLowerCase = str.toLocaleLowerCase();
+        console.log(str);
+        console.log(strLowerCase);
+
+        console.log(str.repeat(2));
+
+    </script>
+</body>
+</html>

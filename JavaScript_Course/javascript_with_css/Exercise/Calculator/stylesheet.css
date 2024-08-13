@@ -1,0 +1,40 @@
+body {
+    background-color: rgba(0, 0, 0, 0.623);
+}
+
+.gray-button {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+.calculation {
+    color: white;
+    font-size: 45px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.orange-button {
+    background-color: rgb(254, 160, 10);
+    color: white;
+}
+
+.container {
+    width: 300px;
+    padding: 10px;
+}
+
+.reset {
+    font-size: 10px;
+}
+
+.btn {
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}

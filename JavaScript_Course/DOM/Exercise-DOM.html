@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn">9a</button>
+
+    <button class="btn-9b" onclick="checkButton()">9b</button>
+
+    <div class="btn-group" style="margin: 20px">
+        <p class="text">Heads and tails game</p>
+        <button class="head" onclick="setText('heads')">head</button>
+        <button class="tails" onclick="setText('tails')">tails</button>
+        <p class="text2"></p>
+    </div>
+    
+    <div class="container" style="margin-top: 80px">
+        <input type="text" class="input-box" placeholder="Name" onkeypress="checkEnter(event)">
+        <button class="submit-button" onclick="printName(event)">
+            Submit
+        </button>
+        <p class="name">
+            Your name is: 
+        </p>
+    </div>
+
+    <div class="container" style="margin-top: 80px">
+        <input type="text" class="input-calculator" onkeyup="getkey(event)">
+        <p class="display-text">
+
+        </p>
+    </div>
+
+    <div class="btn-group" style="margin-top: 70px">
+        <button class="show-quantity">
+            Show Quantity
+        </button>
+        <button class="add-to-cart" onclick="addToCart(1)">
+            Add to cart
+        </button>
+        <button onclick="addToCart(2)">
+            +2
+        </button>
+        <button onclick="addToCart(3)">
+            +3
+        </button>
+        <button onclick="addToCart(4)">
+            +4
+        </button>
+        <button onclick="addToCart(5)">
+            +5
+        </button>
+        <button onclick="addToCart(-1)">
+            Remove from cart
+        </button>
+        <button onclick="addToCart(-2)">
+            -2
+        </button>
+        <button onclick="addToCart(-3)">
+            -3
+        </button>
+
+        <p class="display-quantity">
+            Cart Quantity: 
+        </p>
+    </div>
+
+
+    <script>
+
+        let cartQuantity = 0; 
+
+        function addToCart(number){
+            let amountToDisplay = document.querySelector('.display-quantity');
+            cartQuantity = Number(cartQuantity) + number; 
+            amountToDisplay.innerText = `Cart Quantity: ${cartQuantity}`
+            
+        }
+
+
+        function getkey(event){
+            let keyToDisplay = document.querySelector('.input-calculator');
+
+            let displaykeys = document.querySelector('.display-text'); 
+            displaykeys.innerHTML = keyToDisplay.value;
+        }
+
+        console.log(document.querySelector('.btn'));
+
+        function checkButton() {
+            const button = document.querySelector('.btn-9b');
+            if (button.innerText === "9b") {
+                button.innerHTML = "9b done";
+            } else {
+                button.innerHTML = "9b";
+            }
+        }
+
+        function setText(choice){
+            let text = document.querySelector('.text2');
+            
+            if(choice === 'heads'){
+                text.innerHTML = 'You choose heads';
+            }
+            else{
+                text.innerHTML = 'You choose tails'
+            }       
+        }
+
+        function printName(event) {
+            let userName = document.querySelector('.input-box');
+            let displayName = document.querySelector('.name');
+
+            displayName.innerHTML = `Your name is ${userName.value}`;
+            userName.value = '';
+        }
+
+        function checkEnter(event){
+            if(event.key === 'Enter'){
+                console.log("enter key pressed"); 
+                printName(event); 
+            }
+        }
+
+       
+    </script>
+</body>
+</html>

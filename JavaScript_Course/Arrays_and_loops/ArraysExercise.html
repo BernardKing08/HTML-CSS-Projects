@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrayExercise</title>
+</head>
+<body>
+    
+    <script>
+        const num = [10, 20, 30];
+        num.splice(2);
+        num.push(99);
+        console.log(num)
+    </script>
+
+    <script>
+        const num2 = [10, 20, 30];
+        
+        getLastValue(num2);
+
+        //function that takes the last element in an array and prints it out
+        function getLastValue(myarr){
+            console.log(myarr[myarr.length-1]);
+        }
+    </script>
+
+<!--returns an array where the first and last elements are swapped-->
+    <script>
+        const num3 = [1,20,22,24,5];
+
+        swapArray(num3);
+
+        function swapArray(myarr){
+            console.log(myarr)
+
+            let firstVal = myarr[0]
+            myarr[0] = myarr[myarr.length-1];
+            myarr[myarr.length-1] = firstVal
+
+            console.log(myarr)
+        }
+    </script>
+
+<!--A for loop that counts up by 2-->
+    <script>
+        for(let i = 0; i <= 10; i += 2){
+            console.log(i);
+        }
+    </script>
+
+<!--a loop that takes an array of numbers and creates a ner array where 
+each number is increased by 1-->
+    <script>
+        console.log("a loop that takes an array of numbers and creates a ner array where each number is increased by 1")
+        let myArr = [1, 2, 3]
+
+        for(let i = 0; i < myArr.length; i++){
+            myArr[i] += 1;
+            console.log(myArr[i])
+        }
+    </script>
+
+<!--an array that counts how many times a word in a string appears-->
+    <script>
+        
+    </script>
+</body>
+</html>

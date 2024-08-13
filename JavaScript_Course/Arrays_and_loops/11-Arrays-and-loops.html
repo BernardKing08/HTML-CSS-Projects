@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+</head>
+<body>
+
+    <script>
+        const myarr = [10,20,30];
+        console.log(myarr);
+
+        //printing a specific array
+        console.log(myarr[1])
+
+        //changing a value in the array
+        myarr[0] = 99;
+        console.log(myarr);
+
+        //an array holding differnt variables
+        [1, "hello", true, {name: 'socks'}, [1, 2]]
+
+        //checking type of an array
+        console.log(typeof [1, 2]);
+        console.log(Array.isArray([1,2]));
+
+        //logging length of the array
+        console.log(myarr.length)
+
+        //adding a value to the end of the array 
+        myarr.push(100);
+        console.log(myarr)
+
+        //removing a value from a particular index
+        myarr.slice(0, 1);
+        console.log(myarr)
+
+    </script>
+
+    <!--loops-->
+    <script>
+        let i = 1;
+
+        //creating a while loop
+        while(i <= 5){
+            
+            console.log(i)
+            i += 1;
+        }
+
+        //for loop
+        for(let i = 1; i <= 5; i++){
+            console.log(i);
+        }
+
+        //example of a loop 
+        //generating random number until the number is less than 0.5
+        let randomNumber = 0
+        while(randomNumber < 0.5){
+            randomNumber = Math.random();
+        }
+
+        console.log(randomNumber);
+
+    </script>
+
+    <script>
+        //looping through an array
+        const todolist = [
+            'Make dinner',
+            'Wash dishes',
+            'Watch youtube'
+        ]
+
+        //creating a loop to print out the array 
+        for(let index = 0; index < todolist.length-1; index++){
+            const value = todolist[index]
+            console.log(value);
+        }
+
+        //using the accumulator pattern
+        const num = [1,1,3]
+        let total = 0; 
+        for(let i = 0; i < num.length; i++){
+            const num1 = num[i]; 
+            total += num;
+        }
+    </script>
+    
+</body>
+</html>
